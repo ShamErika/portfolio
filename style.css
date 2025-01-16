@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f4f4f4;
+    background: #7469B6;
     text-align: center;
   }
 
@@ -135,7 +135,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(11, 46, 69); /* Set the background color */
+    background-color: rgb(53, 48, 124); /* Set the background color */
     z-index: 1000;
     padding: 20px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for contrast */
@@ -185,7 +185,7 @@
     padding: 100px 20px;
     min-height: 100vh;
     text-align: center;
-    background: #f4f4f4;
+    background: #B0C4DE;
     color: #b51b1b;
     animation: fadeIn 1.5s ease;
   }
@@ -268,14 +268,14 @@
   padding: 15px 30px;
   font-size: 1.2rem;
   color: white;
-  background: #ff6b6b;
+  background: #3e5bdb;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s ease;
 }
 
 .about-text .cta-button:hover {
-  background: #ff4757;
+  background: #84a1fa;
 }
 
 /* Animations */
@@ -817,14 +817,14 @@
 }
 
 .contact-form button {
-  background: #ff6b6b;
+  background: #263f76;
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #ff4757;
+  background: #47a0ff;
 }
 
 .contact-links a {
