@@ -63,11 +63,11 @@
 
   .hero-content {
     display: flex;
-    flex-direction: column; /* Stack the image above the text */
-    align-items: center; /* Center-align content */
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
-    text-align: center; /* Center-align text */
-    gap: 20px; /* Space between the image and text */
+    text-align: center; 
+    gap: 10px; 
   }
   
   .hero-image img {
@@ -81,7 +81,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: ;
+    margin-top: 20px;
   }
   
   .hero-text p {
@@ -173,8 +173,6 @@
     padding: 100px 20px;
     min-height: 100vh;
     text-align: center;
-    background: #B0C4DE;
-    color: #b51b1b;
     animation: fadeIn 1.5s ease;
   }
   
@@ -205,7 +203,7 @@
     animation: bounceIn 1.5s ease;
   }
   
-  /* Section Background Alternation */
+
  /* About Me Section Styling */
 #about {
   background: black;
