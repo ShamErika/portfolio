@@ -23,9 +23,9 @@
 
         .gallery-content {
             position: relative;
-            width: 90%;
-            max-width: 1200px;
-            height: 90%;
+            width: 95%;
+            max-width: 1400px;
+            height: 95%;
             background: #1a1a1a;
             border-radius: 20px;
             overflow: hidden;
@@ -69,13 +69,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            padding: 30px 80px;
             position: relative;
+            overflow: auto;
         }
 
         .gallery-main-image {
             max-width: 100%;
             max-height: 100%;
+            width: auto;
+            height: auto;
             object-fit: contain;
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -95,6 +98,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            z-index: 10;
         }
 
         .gallery-nav:hover {
@@ -103,11 +107,11 @@
         }
 
         .gallery-prev {
-            left: 20px;
+            left: 10px;
         }
 
         .gallery-next {
-            right: 20px;
+            right: 10px;
         }
 
         .gallery-thumbnails {
@@ -181,7 +185,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#figma">Figma Projects</a></li>
                  <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="#contact" class="cta-btn">Get in touch</a>
@@ -474,64 +479,144 @@
         </div>
     </div>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
+   
+<!-- Certification Carousel (Images Only) -->
+<section class="certifications" id="certifications">
+    <div class="container">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+
+        <div class="carousel-wrapper">
+            <div class="certificates-carousel" id="certificatesCarousel">
+
+                <div class="certificate-card"
+                     onclick="openCertificate('certificates/certificate1.pdf')">
+                    <img src="img/certificates/certificate1.jpg"
+                         alt="Certificate 1"
+                         loading="lazy">
+                </div>
+
+                <div class="certificate-card"
+                     onclick="openCertificate('certificates/certificate2.pdf')">
+                    <img src="img/certificates/certificate2.jpg"
+                         alt="Certificate 2"
+                         loading="lazy">
+                </div>
+
+                <div class="certificate-card"
+                     onclick="openCertificate('certificates/certificate3.pdf')">
+                    <img src="img/certificates/certificate3.jpg"
+                         alt="Certificate 3"
+                         loading="lazy">
+                </div>
+
+                <div class="certificate-card"
+                     onclick="openCertificate('certificates/certificate4.pdf')">
+                    <img src="img/certificates/certificate4.jpg"
+                         alt="Certificate 4"
+                         loading="lazy">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+        <div style="position:relative; width:85%; height:90%; background:#fff; border-radius:15px; overflow:hidden;">
+            <button onclick="closeCertificateModal()" style="position:absolute; top:15px; right:20px; 
+            background:rgba(0,0,0,0.7); color:#fff; border:none; padding:10px 15px; border-radius:50%; cursor:pointer; font-size:20px; z-index:1;">&times;</button>
+            <iframe id="certificateFrame" style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+    </div>
+
+    <!-- Figma Projects Section -->
+    <section class="figma-projects" id="figma">
         <div class="container">
-            <h2 class="section-title">SKILLS</h2>
+            <h2 class="section-title">FIGMA PROJECTS</h2>
             
-            <div class="skills-list">
-                <!-- HTML Skill -->
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percentage">85%</span>
+            <div class="figma-grid">
+                <!-- Figma Project 1 -->
+                <div class="figma-card">
+                    <div class="figma-image">
+                        <img src="img/figma/project1.png" alt="Figma Project 1" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'display:flex; align-items:center; justify-content:center; height:100%; font-size:4rem;\'>🎨</div>';">
+                        <div class="figma-overlay">
+                            <div class="figma-link-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
-
-                <!-- CSS Skill -->
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
-                </div>
-
-                <!-- JavaScript Skill -->
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
+                    <div class="figma-content">
+                        <h3 class="figma-title">Nocturne Bakery: The Midnight Oven</h3>
+                        <p class="figma-description">Nocturne Baker is a cozy, moonlit-themed bakery brand that blends artistry and warmth into every pastry. Inspired by the calm and elegance of the night, it offers baked goods crafted with care and a touch of sophistication — perfect for those quiet moments of indulgence after dark.</p>
+                        
+                        <div class="figma-actions">
+                            <button class="figma-btn figma-btn-primary" onclick="openFigmaGallery('figma1', event)">
+                                View Screens
+                            </button>
+                            <a href="https://www.figma.com/community/file/1583414857589255673" target="_blank" class="figma-btn figma-btn-secondary" onclick="event.stopPropagation()">
+                                Preview in Figma
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- React Skill -->
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">React</span>
-                        <span class="skill-percentage">50%</span>
+                <!-- Figma Project 2 -->
+                <div class="figma-card">
+                    <div class="figma-image">
+                        <img src="img/coming-soon.jpg" alt="Figma Project 2" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'display:flex; align-items:center; justify-content:center; height:100%; font-size:4rem;\'>🎨</div>';">
+                        <div class="figma-overlay">
+                            <div class="figma-link-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="50"></div>
+                    <div class="figma-content">
+                        <h3 class="figma-title">Coming Soon</h3>
+                        <p class="figma-description">Lorem ipsum.</p>
+                        
+                        <div class="figma-actions">
+                            <button class="figma-btn figma-btn-primary" onclick="openFigmaGallery('figma2', event)">
+                                View Screens
+                            </button>
+                            <a href="YOUR_FIGMA_LINK_2" target="_blank" class="figma-btn figma-btn-secondary" onclick="event.stopPropagation()">
+                                Preview in Figma
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- UI/UX Design Skill -->
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">UI/UX Design</span>
-                        <span class="skill-percentage">85%</span>
+                <!-- Figma Project 3 -->
+                <div class="figma-card">
+                    <div class="figma-image">
+                        <img src="img/coming-soon.jpg" alt="Figma Project 3" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'display:flex; align-items:center; justify-content:center; height:100%; font-size:4rem;\'>🎨</div>';">
+                        <div class="figma-overlay">
+                            <div class="figma-link-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
+                    <div class="figma-content">
+                        <h3 class="figma-title">Coming Soon</h3>
+                        <p class="figma-description">Lorem ipsum.</p>
+                        
+                        <div class="figma-actions">
+                            <button class="figma-btn figma-btn-primary" onclick="openFigmaGallery('figma3', event)">
+                                View Screens
+                            </button>
+                            <a href="YOUR_FIGMA_LINK_3" target="_blank" class="figma-btn figma-btn-secondary" onclick="event.stopPropagation()">
+                                Preview in Figma
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -548,7 +633,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>Email</h4>
-                            <p>shamerika13@gmail.com</p>
+                            <p><a href="mailto:shamerika13@gmail.com">shamerika13@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -621,7 +706,7 @@ background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:ce
     <div class="scroll-indicator" onclick="scrollToTop()">↑</div>
 
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Image Gallery Data - Add your screenshot paths here
 const projectGalleries = {
     lalamok: {
@@ -655,6 +740,30 @@ const projectGalleries = {
             'img/rilis/rilis5.png',
             'img/rilis/rilis6.png',
             'img/rilis/rilis7.png',
+        ]
+    },
+
+ figma1: {
+        name: 'Nocturne Baker — UI/UX Design',
+        images: [
+            'img/figma/project1.png',
+            'img/figma/project2.png',
+            'img/figma/project3.png',
+            'img/figma/project4.png'
+        ]
+    },
+    figma2: {
+        name: 'Figma Project 2',
+        images: [
+            'img/figma/project2-1.png',
+            'img/figma/project2-2.png'
+        ]
+    },
+    figma3: {
+        name: 'Figma Project 3',
+        images: [
+            'img/figma/project3-1.png',
+            'img/figma/project3-2.png'
         ]
     }
 };
@@ -726,12 +835,97 @@ function createThumbnails() {
     });
 }
 
+function openFigmaGallery(figmaId, event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const gallery = projectGalleries[figmaId];
+    if (!gallery) return;
+
+    currentGallery = gallery.images;
+    currentImageIndex = 0;
+
+    document.getElementById('galleryProjectName').textContent = gallery.name;
+    document.getElementById('totalImages').textContent = currentGallery.length;
+
+    updateGalleryImage();
+    createThumbnails();
+
+    document.getElementById('imageGalleryModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+// Certificate functions
+function openCertificate(pdfPath) {
+    document.getElementById('certificateFrame').src = pdfPath;
+    document.getElementById('certificateModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertificateModal() {
+    document.getElementById('certificateModal').style.display = 'none';
+    document.getElementById('certificateFrame').src = '';
+    document.body.style.overflow = 'auto';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('certificatesCarousel');
+    if (!carousel) return;
+
+    const items = Array.from(carousel.children);
+
+    // Clone once (not twice)
+    items.forEach(item => {
+        carousel.appendChild(item.cloneNode(true));
+    });
+
+    let speed = 0.6; // smooth continuous speed
+    let isPaused = false;
+
+    // Total width of ONE set
+    let setWidth = 0;
+    items.forEach(item => {
+        setWidth += item.offsetWidth + 15;
+    });
+
+    // Start in the middle to allow seamless looping
+    carousel.scrollLeft = 0;
+
+    function loop() {
+        if (!isPaused) {
+            carousel.scrollLeft += speed;
+
+            // When reaching the duplicate set → jump back seamlessly
+            if (carousel.scrollLeft >= setWidth) {
+                carousel.scrollLeft -= setWidth;
+            }
+        }
+        requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', () => isPaused = true);
+    carousel.addEventListener('mouseleave', () => isPaused = false);
+
+    // Pause on touch
+    carousel.addEventListener('touchstart', () => isPaused = true);
+    carousel.addEventListener('touchend', () => {
+        setTimeout(() => isPaused = false, 400);
+    });
+});
+
+
 // Keyboard navigation for gallery
 document.addEventListener('keydown', (e) => {
     if (document.getElementById('imageGalleryModal').style.display === 'flex') {
         if (e.key === 'ArrowLeft') changeImage(-1);
         if (e.key === 'ArrowRight') changeImage(1);
         if (e.key === 'Escape') closeImageGallery();
+    }
+    if (document.getElementById('certificateModal').style.display === 'flex') {
+        if (e.key === 'Escape') closeCertificateModal();
     }
 });
 
@@ -824,15 +1018,6 @@ function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-document.querySelectorAll('.skill-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        item.style.transform = 'translateY(-5px) scale(1.05)';
-    });
-    item.addEventListener('mouseleave', () => {
-        item.style.transform = 'translateY(0) scale(1)';
-    });
-});
-
 // Parallax effect
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
@@ -905,41 +1090,18 @@ window.addEventListener('scroll', () => {
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPercentage = (scrollTop / scrollHeight) * 100;
     progressBar.style.width = scrollPercentage + '%';
-});
-
-// Skills animation
-document.addEventListener('DOMContentLoaded', function() {
-    const skillsSection = document.querySelector('.skills');
-    const skillItems = document.querySelectorAll('.skill-item');
-    const skillsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                skillItems.forEach((item, index) => {
-                    setTimeout(() => {
-                        item.classList.add('animate');
-                        const progressBar = item.querySelector('.skill-progress');
-                        if (progressBar) {
-                            const width = progressBar.getAttribute('data-width');
-                            progressBar.style.width = width + '%';
-                        }
-                    }, index * 200);
-                });
-                skillsObserver.unobserve(entry.target);
-            }
-        });
-    }, {threshold: 0.3});
-    
-    if (skillsSection) skillsObserver.observe(skillsSection);
-});
+})
 
 function openResumeModal() {
     document.getElementById('resumeModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
 }
 
 function closeResumeModal() {
     document.getElementById('resumeModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
 }
+ </script>
 
-    </script>
 </body>
 </html>
