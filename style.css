@@ -44,7 +44,7 @@
         .logo {
             font-size: clamp(1.2rem, 3vw, 1.5rem);
             font-weight: 700;
-            background: linear-gradient(135deg, #96A78D, #B6CEB4);
+            background: linear-gradient(135deg, #1A1A1A, #000000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -68,11 +68,11 @@
         }
 
         .nav-links a:hover {
-            color: #6366f1;
+            color: #4c4c4d;
         }
 
         .cta-btn {
-            background: linear-gradient(135deg,  #96A78D, #B6CEB4);
+            background: linear-gradient(135deg,  #1A1A1A, #000000);
             color: white;
             padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
             border-radius: 50px;
@@ -112,7 +112,7 @@
         .hero-title {
             font-size: clamp(2rem, 6vw, 4rem);
             font-weight: 900;
-            background: linear-gradient(135deg, #1e293b, #475569);
+            background: linear-gradient(135deg, #1A1A1A, #000000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -122,7 +122,7 @@
 
         .hero-subtitle {
             font-size: clamp(1.2rem, 3vw, 1.5rem);
-            color: #6366f1;
+            color: #000000;
             font-weight: 600;
             margin-bottom: 1rem;
         }
@@ -152,7 +152,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg,  #96A78D, #B6CEB4);
+            background: linear-gradient(145deg, #111111, #2C2C2C);
             color: white;
         }
 
@@ -164,7 +164,7 @@
 
         .btn-primary:hover, .btn-secondary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
         }
 
         .hero-image {
@@ -183,12 +183,12 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: linear-gradient(135deg, #96A78D, #B6CEB4);
+            background: linear-gradient(145deg, #111111, #2C2C2C);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: clamp(3rem, 10vw, 6rem);
-            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 40px rgba(230, 229, 229, 0.3);
             overflow: hidden;
             position: relative;
         }
@@ -213,7 +213,7 @@
             position: absolute;
             width: clamp(15px, 3vw, 20px);
             height: clamp(15px, 3vw, 20px);
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: linear-gradient(145deg, #111111, #2C2C2C);
             border-radius: 50%;
             animation: floatAround 8s linear infinite;
         }
@@ -272,7 +272,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     margin-bottom: clamp(2rem, 5vw, 4rem);
-    background: linear-gradient(135deg, #1e293b, #475569);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -298,7 +298,7 @@
     align-items: center;
     justify-content: center;
     font-size: clamp(3rem, 8vw, 6rem);
-    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 20px 40px rgba(250, 250, 250, 0.3);
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
@@ -306,7 +306,7 @@
 
 .about-image:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 30px 60px rgba(2, 2, 2, 0.4);
 }
 
 .about-image img {
@@ -330,7 +330,7 @@
     color: #6366f1;
     margin-bottom: 1.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -345,10 +345,10 @@
 }
 
 .about-text p:last-child {
-    color: #475569;
+    color: #000000;
     font-weight: 500;
     font-style: italic;
-    border-left: 4px solid #6366f1;
+    border-left: 4px solid #000000;
     padding-left: 1.5rem;
     margin-top: 2rem;
 }
@@ -414,7 +414,7 @@
 
         .filter-btn:hover,
         .filter-btn.active {
-            background: linear-gradient(135deg, #96A78D, #B6CEB4);
+            background: linear-gradient(145deg, #111111, #2C2C2C);
             color: white;
             border-color: transparent;
             transform: translateY(-2px);
@@ -467,7 +467,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -510,8 +510,8 @@
 
         .project-category {
             display: inline-block;
-            background: linear-gradient(135deg, #f3e8ff, #e0e7ff);
-            color: #6366f1;
+            background: linear-gradient(145deg, #111111, #2C2C2C);
+            color: #BFC9D1;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: clamp(0.75rem, 1.5vw, 0.85rem);
@@ -527,14 +527,14 @@
         }
 
         .project-subtitle {
-            color: #6366f1;
+            color: #000000;
             font-weight: 600;
             font-size: clamp(0.9rem, 1.8vw, 1rem);
             margin-bottom: 1rem;
         }
 
         .project-description {
-            color: #64748b;
+            color: #5a5a5a;
             line-height: 1.6;
             font-size: clamp(0.85rem, 1.7vw, 0.95rem);
             margin-bottom: 1.5rem;
@@ -549,7 +549,7 @@
 
         .tech-tag {
             background: #f1f5f9;
-            color: #475569;
+            color: #232324;
             padding: 0.3rem 0.8rem;
             border-radius: 15px;
             font-size: clamp(0.7rem, 1.4vw, 0.8rem);
@@ -687,7 +687,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #96A78D, #B6CEB4);
+            background: linear-gradient(145deg, #111111, #2C2C2C);
             color: white;
             border-radius: 15px;
             flex-shrink: 0;
@@ -736,7 +736,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #6366f1;
+            border-color: #404041;
         }
 
         .form-group textarea {
@@ -774,7 +774,7 @@
         }
 
         .social-links a:hover {
-            background: #6366f1;
+            background: #2e2e2e;
             transform: translateY(-3px);
         }
 
@@ -862,7 +862,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 900;
     margin-bottom: clamp(2rem, 5vw, 4rem);
-    color: #6366f1;
+    color: #3b3b3b;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -876,7 +876,7 @@
 }
 
 .education-card {
-    background: linear-gradient(135deg, #4c1d95, #5b21b6, #6d28d9);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(139, 92, 246, 0.3);
     padding: clamp(1.5rem, 3vw, 2.5rem);
@@ -889,7 +889,7 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(76, 29, 149, 0.3);
+    box-shadow: 0 10px 30px rgba(43, 43, 43, 0.3);
 }
 
 .education-card::before {
@@ -909,8 +909,8 @@
 
 .education-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(76, 29, 149, 0.4);
-    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(73, 72, 73, 0.4);
+    border-color: rgba(68, 68, 68, 0.5);
 }
 
 .education-icon {
@@ -923,7 +923,7 @@
     justify-content: center;
     flex-shrink: 0;
     color: white;
-    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.4);
 }
 
 .education-content {
@@ -997,7 +997,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 900;
     margin-bottom: clamp(2rem, 5vw, 4rem);
-    background: linear-gradient(135deg, #96A78D, #B6CEB4);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1074,13 +1074,13 @@
 .certificate-icon {
     width: clamp(60px, 12vw, 80px);
     height: clamp(60px, 12vw, 80px);
-    background: linear-gradient(135deg, #96A78D, #B6CEB4);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    box-shadow: 0 5px 15px rgba(150, 167, 141, 0.3);
+    box-shadow: 0 5px 15px rgba(88, 88, 88, 0.3);
 }
 
 .certificate-icon svg {
@@ -1100,7 +1100,7 @@
 }
 
 .certificate-issuer {
-    color: #6366f1;
+    color: #484849;
     font-weight: 600;
     font-size: clamp(0.85rem, 1.7vw, 1rem);
     margin-bottom: 0.5rem;
@@ -1175,7 +1175,7 @@
 }
 
 .carousel-dot.active {
-    background: linear-gradient(135deg, #96A78D, #B6CEB4);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     width: clamp(25px, 4vw, 30px);
     border-radius: 6px;
     animation: dotPulse 1.5s ease-in-out infinite;
@@ -1227,7 +1227,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 900;
     margin-bottom: clamp(2rem, 5vw, 4rem);
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1282,7 +1282,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+    background: linear-gradient(135deg, rgba(9, 9, 12, 0.9), rgba(81, 81, 82, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1398,7 +1398,7 @@
 }
 
 .figma-btn-primary {
-    background: linear-gradient(135deg, #96A78D, #B6CEB4);
+    background: linear-gradient(145deg, #111111, #2C2C2C);
     color: white;
 }
 
@@ -1409,15 +1409,15 @@
 
 .figma-btn-secondary {
     background: transparent;
-    color: #6366f1;
-    border: 2px solid #6366f1;
+    color: #a0a0a0;
+    border: 2px solid #9b9b9b;
 }
 
 .figma-btn-secondary:hover {
-    background: #6366f1;
+    background: #39393a;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 5px 15px rgba(87, 87, 87, 0.3);
 }
 
 /* Tablet-specific adjustments (768px - 1024px) */
